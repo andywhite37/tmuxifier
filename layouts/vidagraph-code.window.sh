@@ -13,6 +13,9 @@ select_pane 1
 run_cmd "nvim src/Main.purs"
 
 select_pane 2
-run_cmd "spago --version"
+run_cmd "npm run client watch"
+
+select_pane 3
+run_cmd "npm run client serve"
 
 select_pane 1
