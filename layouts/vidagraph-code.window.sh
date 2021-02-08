@@ -10,12 +10,12 @@ split_v 5
 split_h 50
 
 select_pane 1
-run_cmd "nvim src/Main.purs"
+run_cmd "nvim ."
 
 select_pane 2
-run_cmd "npm run client watch"
+run_cmd "npm run server run"
 
 select_pane 3
-run_cmd "npm run client serve"
+run_cmd "npm run client run"
 
 select_pane 1
